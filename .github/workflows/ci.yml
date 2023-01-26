@@ -30,4 +30,4 @@ jobs:
 
       - name: Run demo test
         id: test
-        run: src/github.com/emporous-community/ai-model-registry/hack/run
+        run: src/github.com/emporous-community/ai-model-registry/hack/run.sh
