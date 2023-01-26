@@ -11,8 +11,6 @@ EXPOSE 1338
 ENTRYPOINT ["/registry", "-port", "5000"]
 EOF
 
-git clone https://github.com/emporous-community/ai-model-registry ai-model-registry && cd ai-model-registry
-
 ${run_cmd} run --rm -it \
           -v $(pwd)/dist/:/go/dist \
           -v $(pwd)/hack/build-client.sh:/go/build-client.sh \
