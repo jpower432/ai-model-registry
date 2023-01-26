@@ -25,7 +25,10 @@ jobs:
 
       - name: Checkout Repo
         uses: actions/checkout@v3
+        with:
+          path: src/github.com/emporous-community/ai-model-registry
 
       - name: Run demo test
         id: test
-        run: ai-model-registry/hack/run.sh
+        run: ./hack/run.sh
+        working-directory: src/github.com/emporous-community/ai-model-registry
